@@ -481,19 +481,126 @@ export default function Home() {
 
       </section>
 
-      {/* FOOTER */}
+     {/* ================================================= */}
+{/* FOOTER */}
+{/* ================================================= */}
 
-      <footer className="border-t border-[#b87333]/10 px-5 py-10 text-center">
+<footer className="relative z-10 border-t border-[#b87333]/10 px-5 py-10">
+  <div className="mx-auto max-w-6xl">
 
-        <p className="font-bold">
+    {/* Related Tools */}
+    <div className="mb-10 text-center">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#b87333]">
+        Explore More
+      </p>
+
+      <h3 className="mt-2 text-xl font-bold text-white">
+        More File & PDF Tools
+      </h3>
+
+      <p className="mx-auto mt-2 max-w-xl text-sm text-zinc-500">
+        Explore more useful tools from KrishAIWorks to convert,
+        compress, and manage your files.
+      </p>
+    </div>
+
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+      {/* Image Resizer & Compressor */}
+      <a
+        href="https://imageresizercompressor.krishaiworks.com/"
+        className="group rounded-2xl border border-[#b87333]/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-[#b87333]/30 hover:bg-[#b87333]/[0.05]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-[#b87333]/20 bg-[#b87333]/10 text-lg">
+          🖼️
+        </div>
+
+        <h4 className="font-semibold text-white transition-colors group-hover:text-[#b87333]">
+          Image Resizer & Compressor
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Resize and compress images while keeping them optimized.
+        </p>
+      </a>
+
+      {/* PDF Compressor */}
+      <a
+        href="https://pdfcompressor.krishaiworks.com/"
+        className="group rounded-2xl border border-[#b87333]/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-[#b87333]/30 hover:bg-[#b87333]/[0.05]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-[#b87333]/20 bg-[#b87333]/10 text-lg">
+          📦
+        </div>
+
+        <h4 className="font-semibold text-white transition-colors group-hover:text-[#b87333]">
+          PDF Compressor
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Reduce PDF file size for easier storage and sharing.
+        </p>
+      </a>
+
+      {/* PDF Merger & Splitter */}
+      <a
+        href="https://pdfmergersplitter.krishaiworks.com/"
+        className="group rounded-2xl border border-[#b87333]/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-[#b87333]/30 hover:bg-[#b87333]/[0.05]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-[#b87333]/20 bg-[#b87333]/10 text-lg">
+          📚
+        </div>
+
+        <h4 className="font-semibold text-white transition-colors group-hover:text-[#b87333]">
+          PDF Merger & Splitter
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Merge multiple PDFs or split documents into separate files.
+        </p>
+      </a>
+
+      {/* PDF AI Summarizer */}
+      <a
+        href="https://pdfaisummarizer.krishaiworks.com/"
+        className="group rounded-2xl border border-[#b87333]/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-[#b87333]/30 hover:bg-[#b87333]/[0.05]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-[#b87333]/20 bg-[#b87333]/10 text-lg">
+          📄
+        </div>
+
+        <h4 className="font-semibold text-white transition-colors group-hover:text-[#b87333]">
+          PDF AI Summarizer
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Quickly summarize and understand important PDF content.
+        </p>
+      </a>
+
+    </div>
+
+    {/* Main Footer */}
+    <div className="mt-10 flex flex-col items-center justify-between gap-5 border-t border-white/5 pt-8 text-center sm:flex-row sm:text-left">
+
+      <div>
+        <p className="font-bold text-white">
           KrishAIWorks
         </p>
 
         <p className="mt-2 text-xs text-zinc-600">
           AI Solutions That Work
         </p>
+      </div>
 
-      </footer>
+      <p className="text-xs text-zinc-600">
+        © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
+      </p>
+
+    </div>
+
+  </div>
+</footer>
 
     </main>
   );
