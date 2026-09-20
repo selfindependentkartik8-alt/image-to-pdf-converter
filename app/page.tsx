@@ -581,25 +581,47 @@ export default function Home() {
     </div>
 
     {/* Main Footer */}
-    <div className="mt-10 flex flex-col items-center justify-between gap-5 border-t border-white/5 pt-8 text-center sm:flex-row sm:text-left">
+<div className="mt-10 flex flex-col items-center justify-between gap-5 border-t border-white/5 pt-8 text-center sm:flex-row sm:text-left">
 
-      <div>
-        <p className="font-bold text-white">
-          KrishAIWorks
-        </p>
+  <div>
+    <p className="font-bold text-white">
+      KrishAIWorks
+    </p>
 
-        <p className="mt-2 text-xs text-zinc-600">
-          AI Solutions That Work
-        </p>
-      </div>
+    <p className="mt-2 text-xs text-zinc-600">
+      AI Solutions That Work
+    </p>
+  </div>
 
-      <p className="text-xs text-zinc-600">
-        © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
-      </p>
+  <div className="flex flex-col items-center gap-2 sm:items-end">
+
+    <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-zinc-600">
+
+      <a
+        href="https://krishaiworks.com/privacy-policy"
+        className="whitespace-nowrap transition hover:text-violet-300"
+      >
+        Privacy Policy
+      </a>
+
+      <a
+        href="https://krishaiworks.com/terms-and-conditions"
+        className="whitespace-nowrap transition hover:text-violet-300"
+      >
+        Terms & Conditions
+      </a>
 
     </div>
 
+    <p className="text-xs text-zinc-600">
+      © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
+    </p>
+
   </div>
+
+</div>
+
+</div>
 </footer>
 
     </main>
